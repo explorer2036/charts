@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-01-19T07:53:20.620Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="qPcByq1zRGemktX9rEWG" version="20.8.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-19T09:55:18.257Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="GQlvrlCnCA7iSK2T8woX" version="20.8.5" type="github">
   <diagram name="apid-hls" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
-    <mxGraphModel dx="1434" dy="784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="840" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -124,8 +124,8 @@
             <mxPoint x="765" y="659.2" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="UFAurpjtppyZMZ4vWk6g-21" value="HLS -&gt; before reading stream" style="label;fontStyle=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;overflow=hidden;spacingLeft=28;spacingRight=4;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;imageWidth=16;imageHeight=16;image=img/clipart/Gear_128x128.png;rounded=0;shadow=0;glass=0;sketch=0;" parent="1" vertex="1">
-          <mxGeometry x="190" y="90" width="200" height="26" as="geometry" />
+        <mxCell id="UFAurpjtppyZMZ4vWk6g-21" value="HLS -&gt; before reading stream" style="label;fontStyle=0;strokeColor=none;fillColor=none;align=left;verticalAlign=top;overflow=hidden;spacingLeft=28;spacingRight=4;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;imageWidth=16;imageHeight=16;image=img/clipart/Gear_128x128.png;rounded=0;shadow=0;glass=0;sketch=0;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="140" y="918" width="200" height="26" as="geometry" />
         </mxCell>
         <mxCell id="Thj6wxJjOtLek-U9q6IT-3" value="GET all the LBs for stream" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;entryX=0.1;entryY=0.005;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="UFAurpjtppyZMZ4vWk6g-14" target="Thj6wxJjOtLek-U9q6IT-2">
           <mxGeometry relative="1" as="geometry">
@@ -204,6 +204,12 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="775" y="639" as="targetPoint" />
             <mxPoint x="1085" y="639" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UMdWiC70G_uIirxmUKig-1" value="" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=2;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="960" as="sourcePoint" />
+            <mxPoint x="1160" y="960" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
