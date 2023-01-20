@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-20T07:36:20.291Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="nSMCbTL5tySbVLtKddnR" version="20.8.5" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2023-01-20T07:47:20.315Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="dl4UQIEhOXs6m8dMgKxD" version="20.8.5" type="github" pages="5">
   <diagram name="apid-hls" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="2209" dy="1083" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -944,18 +944,18 @@
     </mxGraphModel>
   </diagram>
   <diagram name="smonitd-start-internal" id="HBsk91-JfLgfXPyEQIgj">
-    <mxGraphModel dx="1546" dy="758" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1546" dy="792" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="nfRaWIYY3JlYnwY104Kz-0" />
         <mxCell id="nfRaWIYY3JlYnwY104Kz-1" parent="nfRaWIYY3JlYnwY104Kz-0" />
         <mxCell id="OZPKwilM8SW0Z7TV56iU-20" value="TRY the sources one by one" style="shape=umlFrame;whiteSpace=wrap;html=1;width=176;height=22;strokeWidth=2;fillColor=#ffcd28;strokeColor=#d79b00;perimeterSpacing=1;gradientColor=#ffa500;fontStyle=1" vertex="1" parent="nfRaWIYY3JlYnwY104Kz-1">
-          <mxGeometry x="684" y="263" width="686" height="237" as="geometry" />
+          <mxGeometry x="684" y="263" width="496" height="237" as="geometry" />
         </mxCell>
         <mxCell id="OZPKwilM8SW0Z7TV56iU-21" value="smonitd" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="nfRaWIYY3JlYnwY104Kz-1">
-          <mxGeometry x="629" y="90" width="100" height="610" as="geometry" />
+          <mxGeometry x="629" y="90" width="100" height="660" as="geometry" />
         </mxCell>
         <mxCell id="OZPKwilM8SW0Z7TV56iU-22" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;glass=0;sketch=0;" vertex="1" parent="OZPKwilM8SW0Z7TV56iU-21">
-          <mxGeometry x="45" y="89" width="10" height="521" as="geometry" />
+          <mxGeometry x="45" y="89" width="10" height="571" as="geometry" />
         </mxCell>
         <mxCell id="OZPKwilM8SW0Z7TV56iU-23" value="stream is&lt;b&gt; Running&lt;/b&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="OZPKwilM8SW0Z7TV56iU-21">
           <mxGeometry relative="1" as="geometry">
@@ -979,29 +979,18 @@
             <mxPoint x="55" y="247" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="OZPKwilM8SW0Z7TV56iU-25" value="new stream entity: stream_id, source_type, process_id, started_at, &lt;br&gt;command template, current_source, sources, stream_status" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="OZPKwilM8SW0Z7TV56iU-21">
+        <mxCell id="OZPKwilM8SW0Z7TV56iU-25" value="new &lt;b&gt;STREAM ENTITY&lt;/b&gt;: stream_id, source_type, process_id, started_at, &lt;br&gt;command template, current_source, sources, stream_status" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="OZPKwilM8SW0Z7TV56iU-21">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="55" y="551" as="sourcePoint" />
+            <mxPoint x="55" y="490" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="85" y="551" />
-              <mxPoint x="85" y="591" />
-              <mxPoint x="55" y="591" />
+              <mxPoint x="85" y="490" />
+              <mxPoint x="85" y="530" />
+              <mxPoint x="55" y="530" />
             </Array>
-            <mxPoint x="55" y="591" as="targetPoint" />
+            <mxPoint x="55" y="530" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="OZPKwilM8SW0Z7TV56iU-26" value="add a new job into cron to check process liveness&amp;nbsp;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="OZPKwilM8SW0Z7TV56iU-21">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="55" y="491" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="85" y="491" />
-              <mxPoint x="85" y="531" />
-              <mxPoint x="55" y="531" />
-            </Array>
-            <mxPoint x="55" y="531" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="OZPKwilM8SW0Z7TV56iU-27" value="FAILED to start the stream" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="OZPKwilM8SW0Z7TV56iU-21">
+        <mxCell id="OZPKwilM8SW0Z7TV56iU-27" value="&lt;b&gt;FAILED&lt;/b&gt; to start the stream" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="OZPKwilM8SW0Z7TV56iU-21">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="55" y="430" as="sourcePoint" />
             <Array as="points">
@@ -1024,11 +1013,22 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="F9DrLU7MLU9w9DYMBy8v-0" value="&lt;b&gt;ERROR happens for connection:&lt;br&gt;&lt;/b&gt;1. update the stream status: Stopped&lt;br&gt;2. cancel the stream receive loop&lt;br&gt;3. close the grpc connection&lt;br&gt;4. delete all the m3u8 and ts files&lt;br&gt;5. reset the connection and stream to smonitd" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="OZPKwilM8SW0Z7TV56iU-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="570" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="570" />
+              <mxPoint x="85" y="610" />
+              <mxPoint x="55" y="610" />
+            </Array>
+            <mxPoint x="55" y="610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="OZPKwilM8SW0Z7TV56iU-28" value="reconciler" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="nfRaWIYY3JlYnwY104Kz-1">
-          <mxGeometry x="149" y="90" width="100" height="610" as="geometry" />
+          <mxGeometry x="149" y="90" width="100" height="660" as="geometry" />
         </mxCell>
         <mxCell id="OZPKwilM8SW0Z7TV56iU-29" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;glass=0;sketch=0;" vertex="1" parent="OZPKwilM8SW0Z7TV56iU-28">
-          <mxGeometry x="45" y="89" width="10" height="521" as="geometry" />
+          <mxGeometry x="45" y="89" width="10" height="571" as="geometry" />
         </mxCell>
         <mxCell id="OZPKwilM8SW0Z7TV56iU-30" value="&lt;b&gt;Start &lt;/b&gt;stream: id, source type, command template, sources (&lt;b&gt;only one&lt;/b&gt;)&lt;span id=&quot;docs-internal-guid-77c845aa-7fff-4196-9b9b-9b171f603c35&quot;&gt;&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeWidth=1;" edge="1" parent="OZPKwilM8SW0Z7TV56iU-28" target="OZPKwilM8SW0Z7TV56iU-22">
           <mxGeometry relative="1" as="geometry">
@@ -1040,8 +1040,8 @@
         </mxCell>
         <mxCell id="OZPKwilM8SW0Z7TV56iU-31" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;return&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;fontStyle=1" edge="1" parent="nfRaWIYY3JlYnwY104Kz-1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="204" y="690" as="targetPoint" />
-            <mxPoint x="674" y="690" as="sourcePoint" />
+            <mxPoint x="204" y="740" as="targetPoint" />
+            <mxPoint x="674" y="740" as="sourcePoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
