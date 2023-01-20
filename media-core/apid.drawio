@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-20T02:03:47.713Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="KPXt7_kfTYvtwkzqgY4n" version="20.8.5" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-01-20T02:26:37.296Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="5I2IjNlxTBkl1g8G45ya" version="20.8.5" type="github" pages="2">
   <diagram name="apid-hls" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="1546" dy="758" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -326,17 +326,17 @@
     </mxGraphModel>
   </diagram>
   <diagram id="zuvUgJYXDmi82aE4v0Nu" name="token">
-    <mxGraphModel dx="1306" dy="701" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1306" dy="758" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="zRF1bt_8qYfwn8CYkvXk-5" value="ctld" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="560" y="80" width="100" height="610" as="geometry" />
+          <mxGeometry x="635" y="80" width="100" height="610" as="geometry" />
         </mxCell>
         <mxCell id="zRF1bt_8qYfwn8CYkvXk-7" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;glass=0;sketch=0;" vertex="1" parent="zRF1bt_8qYfwn8CYkvXk-5">
           <mxGeometry x="45" y="80" width="10" height="530" as="geometry" />
         </mxCell>
-        <mxCell id="SkYYE-4hgYnKpLwvNhnM-1" value="New an &lt;b&gt;uuid&lt;/b&gt; as the key" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="zRF1bt_8qYfwn8CYkvXk-5">
+        <mxCell id="SkYYE-4hgYnKpLwvNhnM-1" value="read the private key" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="zRF1bt_8qYfwn8CYkvXk-5">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="55" y="101" as="sourcePoint" />
             <Array as="points">
@@ -347,7 +347,7 @@
             <mxPoint x="55" y="141" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="SkYYE-4hgYnKpLwvNhnM-2" value="&lt;b&gt;Generate&lt;/b&gt; a token by the key: sha256(&lt;b&gt;uuid&lt;/b&gt; + &quot;$&quot; + &lt;b&gt;stream_id&lt;/b&gt; + &quot;$&quot; +&amp;nbsp; &lt;b&gt;server_id + &lt;/b&gt;&quot;$&quot;&lt;b&gt; + timestamp&lt;/b&gt;)" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="zRF1bt_8qYfwn8CYkvXk-5">
+        <mxCell id="SkYYE-4hgYnKpLwvNhnM-2" value="&lt;b&gt;Generate&lt;/b&gt; a token by the key: sha256(&lt;b&gt;key&lt;/b&gt; + &quot;$&quot; + &lt;b&gt;stream_id&lt;/b&gt; + &quot;$&quot; +&amp;nbsp; &lt;b&gt;server_id + &lt;/b&gt;&quot;$&quot;&lt;b&gt; + timestamp&lt;/b&gt;)" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="zRF1bt_8qYfwn8CYkvXk-5">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="55" y="161" as="sourcePoint" />
             <Array as="points">
@@ -360,48 +360,35 @@
         </mxCell>
         <mxCell id="GlCADl3FH_rTHojEuDZY-10" value="Check if the timestamp is expired (10s)" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="zRF1bt_8qYfwn8CYkvXk-5">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="55" y="420" as="sourcePoint" />
+            <mxPoint x="55" y="390" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="85" y="420" />
-              <mxPoint x="85" y="460" />
-              <mxPoint x="55" y="460" />
+              <mxPoint x="85" y="390" />
+              <mxPoint x="85" y="430" />
+              <mxPoint x="55" y="430" />
             </Array>
-            <mxPoint x="55" y="460" as="targetPoint" />
+            <mxPoint x="55" y="430" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GlCADl3FH_rTHojEuDZY-11" value="Generate the token: sha256(&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;uuid&lt;/b&gt;&amp;nbsp;+ &quot;$&quot; +&amp;nbsp;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;stream_id&lt;/b&gt;&amp;nbsp;+ &quot;$&quot; +&amp;nbsp;&amp;nbsp;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;server_id + &lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&quot;$&quot;&lt;/span&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt; + timestamp&lt;/b&gt;)" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="zRF1bt_8qYfwn8CYkvXk-5">
+        <mxCell id="GlCADl3FH_rTHojEuDZY-11" value="Generate the token: sha256(&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;key&lt;/b&gt;&amp;nbsp;+ &quot;$&quot; +&amp;nbsp;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;stream_id&lt;/b&gt;&amp;nbsp;+ &quot;$&quot; +&amp;nbsp;&amp;nbsp;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;server_id + &lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&quot;$&quot;&lt;/span&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt; + timestamp&lt;/b&gt;)" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="zRF1bt_8qYfwn8CYkvXk-5">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="55" y="480" as="sourcePoint" />
+            <mxPoint x="55" y="450" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="85" y="480" />
-              <mxPoint x="85" y="520" />
-              <mxPoint x="55" y="520" />
+              <mxPoint x="85" y="450" />
+              <mxPoint x="85" y="490" />
+              <mxPoint x="55" y="490" />
             </Array>
-            <mxPoint x="55" y="520" as="targetPoint" />
+            <mxPoint x="55" y="490" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="GlCADl3FH_rTHojEuDZY-12" value="Compare the requested token with generated token" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="zRF1bt_8qYfwn8CYkvXk-5">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="55" y="540" as="sourcePoint" />
+            <mxPoint x="55" y="510" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="85" y="540" />
-              <mxPoint x="85" y="580" />
-              <mxPoint x="55" y="580" />
+              <mxPoint x="85" y="510" />
+              <mxPoint x="85" y="550" />
+              <mxPoint x="55" y="550" />
             </Array>
-            <mxPoint x="55" y="580" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zRF1bt_8qYfwn8CYkvXk-16" value="redis" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;fillColor=#f0a30a;strokeColor=#BD7000;glass=0;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="1150" y="80" width="100" height="400" as="geometry" />
-        </mxCell>
-        <mxCell id="zRF1bt_8qYfwn8CYkvXk-60" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;glass=0;sketch=0;" vertex="1" parent="zRF1bt_8qYfwn8CYkvXk-16">
-          <mxGeometry x="45" y="240" width="10" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="zRF1bt_8qYfwn8CYkvXk-32" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;return&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;fontStyle=1" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="614" y="360" as="targetPoint" />
-            <mxPoint x="1195" y="360" as="sourcePoint" />
-            <mxPoint as="offset" />
+            <mxPoint x="55" y="550" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="GlCADl3FH_rTHojEuDZY-1" value="apid" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
@@ -418,38 +405,17 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="zRF1bt_8qYfwn8CYkvXk-8" value="&lt;b&gt;redirect_url&lt;/b&gt; = http://xxxx?id=$id&amp;amp;token=$token&amp;amp;time=$timestamp" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="1" target="GlCADl3FH_rTHojEuDZY-3">
+        <mxCell id="zRF1bt_8qYfwn8CYkvXk-8" value="&lt;b&gt;redirect_url&lt;/b&gt; = http://xxxx?id=$id&amp;amp;token=$token&amp;amp;time=$timestamp" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;exitX=-0.3;exitY=0.411;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="zRF1bt_8qYfwn8CYkvXk-7" target="GlCADl3FH_rTHojEuDZY-3">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="295" y="380" as="targetPoint" />
             <mxPoint x="605" y="380" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GlCADl3FH_rTHojEuDZY-6" value="&lt;b&gt;Validate&lt;/b&gt; the token with stream_id, server_id, timestamp" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeWidth=1;" edge="1" parent="1" source="GlCADl3FH_rTHojEuDZY-3">
+        <mxCell id="GlCADl3FH_rTHojEuDZY-6" value="&lt;b&gt;Validate&lt;/b&gt; the token with stream_id, server_id, timestamp" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeWidth=1;entryX=0;entryY=0.528;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="GlCADl3FH_rTHojEuDZY-3" target="zRF1bt_8qYfwn8CYkvXk-7">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="295" y="429" as="sourcePoint" />
-            <mxPoint x="605" y="429" as="targetPoint" />
+            <mxPoint x="620" y="440" as="targetPoint" />
             <Array as="points" />
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="GlCADl3FH_rTHojEuDZY-7" value="&lt;b&gt;GET&lt;/b&gt; KEY($token)" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeWidth=1;" edge="1" parent="1" source="zRF1bt_8qYfwn8CYkvXk-7">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="620" y="440" as="sourcePoint" />
-            <mxPoint x="1195.5" y="440" as="targetPoint" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="GlCADl3FH_rTHojEuDZY-8" value="&lt;b&gt;SET&lt;/b&gt; KEY($token) VALUE($uuid)" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;strokeWidth=1;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="615" y="320" as="sourcePoint" />
-            <mxPoint x="1195.5" y="320" as="targetPoint" />
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="GlCADl3FH_rTHojEuDZY-9" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;uuid&lt;/span&gt;" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;fontStyle=1" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="614" y="480" as="targetPoint" />
-            <mxPoint x="1195" y="480" as="sourcePoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
