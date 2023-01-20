@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-20T02:26:37.296Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="5I2IjNlxTBkl1g8G45ya" version="20.8.5" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-01-20T02:27:06.088Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="Dt1ZWFu-arbWuZUVotJD" version="20.8.5" type="github" pages="2">
   <diagram name="apid-hls" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="1546" dy="758" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -336,7 +336,7 @@
         <mxCell id="zRF1bt_8qYfwn8CYkvXk-7" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;rounded=0;shadow=0;glass=0;sketch=0;" vertex="1" parent="zRF1bt_8qYfwn8CYkvXk-5">
           <mxGeometry x="45" y="80" width="10" height="530" as="geometry" />
         </mxCell>
-        <mxCell id="SkYYE-4hgYnKpLwvNhnM-1" value="read the private key" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="zRF1bt_8qYfwn8CYkvXk-5">
+        <mxCell id="SkYYE-4hgYnKpLwvNhnM-1" value="&lt;b&gt;Read&lt;/b&gt; the private key" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="zRF1bt_8qYfwn8CYkvXk-5">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="55" y="101" as="sourcePoint" />
             <Array as="points">
@@ -358,7 +358,7 @@
             <mxPoint x="55" y="201" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GlCADl3FH_rTHojEuDZY-10" value="Check if the timestamp is expired (10s)" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="zRF1bt_8qYfwn8CYkvXk-5">
+        <mxCell id="GlCADl3FH_rTHojEuDZY-10" value="&lt;b&gt;Check&lt;/b&gt; if the timestamp is expired (10s)" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="zRF1bt_8qYfwn8CYkvXk-5">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="55" y="390" as="sourcePoint" />
             <Array as="points">
@@ -369,7 +369,7 @@
             <mxPoint x="55" y="430" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GlCADl3FH_rTHojEuDZY-11" value="Generate the token: sha256(&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;key&lt;/b&gt;&amp;nbsp;+ &quot;$&quot; +&amp;nbsp;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;stream_id&lt;/b&gt;&amp;nbsp;+ &quot;$&quot; +&amp;nbsp;&amp;nbsp;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;server_id + &lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&quot;$&quot;&lt;/span&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt; + timestamp&lt;/b&gt;)" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="zRF1bt_8qYfwn8CYkvXk-5">
+        <mxCell id="GlCADl3FH_rTHojEuDZY-11" value="&lt;b&gt;Generate&lt;/b&gt; the token: sha256(&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;key&lt;/b&gt;&amp;nbsp;+ &quot;$&quot; +&amp;nbsp;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;stream_id&lt;/b&gt;&amp;nbsp;+ &quot;$&quot; +&amp;nbsp;&amp;nbsp;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;server_id + &lt;/b&gt;&lt;span style=&quot;border-color: var(--border-color);&quot;&gt;&quot;$&quot;&lt;/span&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt; + timestamp&lt;/b&gt;)" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="zRF1bt_8qYfwn8CYkvXk-5">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="55" y="450" as="sourcePoint" />
             <Array as="points">
@@ -380,7 +380,7 @@
             <mxPoint x="55" y="490" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="GlCADl3FH_rTHojEuDZY-12" value="Compare the requested token with generated token" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="zRF1bt_8qYfwn8CYkvXk-5">
+        <mxCell id="GlCADl3FH_rTHojEuDZY-12" value="&lt;b&gt;Compare&lt;/b&gt; the requested token with generated token" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" edge="1" parent="zRF1bt_8qYfwn8CYkvXk-5">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="55" y="510" as="sourcePoint" />
             <Array as="points">
