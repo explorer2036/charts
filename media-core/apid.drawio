@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-20T03:37:38.417Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="u64yekmGx3ARgGp3fVwL" version="20.8.5" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-01-20T06:47:54.670Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="AAUYSJ96mk_O1KFIwzI0" version="20.8.5" type="github" pages="3">
   <diagram name="apid-hls" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="1866" dy="1001" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -337,7 +337,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="apid-mpegts" id="Jucx_8GB0xB7ungxl8EQ">
-    <mxGraphModel dx="1718" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1718" dy="842" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="JAxIDjcx8rn5_0GaB9EO-0" />
         <mxCell id="JAxIDjcx8rn5_0GaB9EO-1" parent="JAxIDjcx8rn5_0GaB9EO-0" />
@@ -482,7 +482,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="urkaruipd9H_pTWYQZDA-26" value="MPEGTS -&gt; when reading stream" style="label;fontStyle=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;overflow=hidden;spacingLeft=28;spacingRight=4;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;imageWidth=16;imageHeight=16;image=img/clipart/Gear_128x128.png;rounded=0;shadow=0;glass=0;sketch=0;strokeWidth=3;" vertex="1" parent="JAxIDjcx8rn5_0GaB9EO-1">
-          <mxGeometry x="150" y="1164" width="220" height="26" as="geometry" />
+          <mxGeometry x="150" y="1164" width="230" height="26" as="geometry" />
         </mxCell>
         <mxCell id="urkaruipd9H_pTWYQZDA-27" value="GET all the LBs for stream" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;entryX=0.1;entryY=0.005;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="JAxIDjcx8rn5_0GaB9EO-1" source="urkaruipd9H_pTWYQZDA-10" target="urkaruipd9H_pTWYQZDA-17">
           <mxGeometry relative="1" as="geometry">
@@ -668,7 +668,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="urkaruipd9H_pTWYQZDA-58" value="MPEGTS -&gt; user close the connection" style="label;fontStyle=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;overflow=hidden;spacingLeft=28;spacingRight=4;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;imageWidth=16;imageHeight=16;image=img/clipart/Gear_128x128.png;rounded=0;shadow=0;glass=0;sketch=0;strokeWidth=3;" vertex="1" parent="JAxIDjcx8rn5_0GaB9EO-1">
-          <mxGeometry x="140" y="1472" width="230" height="26" as="geometry" />
+          <mxGeometry x="140" y="1472" width="250" height="26" as="geometry" />
         </mxCell>
         <mxCell id="urkaruipd9H_pTWYQZDA-59" value="" style="endArrow=none;dashed=1;html=1;rounded=0;strokeWidth=2;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" edge="1" parent="JAxIDjcx8rn5_0GaB9EO-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
